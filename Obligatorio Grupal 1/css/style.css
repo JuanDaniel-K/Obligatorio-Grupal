@@ -1,0 +1,154 @@
+/* ========== ESTILOS BASE Y LAYOUT FLEX PARA MANTENER FOOTER EN EL FONDO ========== */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #426db2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #426db2;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+/*Logo Home*/
+.logo {
+    width: 30px;  
+    height: auto;  
+}
+
+/* ========== MENÚ DE NAVEGACIÓN ========== */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+nav {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+nav h4 {
+    text-align: center;
+}
+#lista-personas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+#lista-personas li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #007bff;
+  cursor: pointer;
+}
+
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+main {
+    flex: 1;
+    padding: 2px;
+}
+
+/* ========== FOOTER CORREGIDO ========== */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Estilo de card */
+.container {
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Centrar card */
+.centrar-card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARRITO DE COMPRAS*/
+.logoCarrito {
+    width: 30px;  
+    height: auto;  
+}
+
+.botonsito {
+    background-color: black;      
+    color: white;                    
+    border: none;                    
+    padding: 10px 20px;             
+    font-size: 16px;                 
+    border-radius: 8px;            
+    cursor: pointer;                 
+}
+
+.contenedor-flex-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}

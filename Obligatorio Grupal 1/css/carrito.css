@@ -1,0 +1,101 @@
+
+
+
+/* ========== ESTILOS BASE Y LAYOUT FLEX PARA MANTENER FOOTER EN EL FONDO ========== */
+html, body {
+    height: 100%; /* Asegura que el body pueda ocupar toda la altura de la ventana */
+    margin: 0;
+}
+
+body {
+    background-color: #426db2;
+    display: flex;             /* Flexbox para distribuir header, main y footer */
+    flex-direction: column;
+    min-height: 100vh;         /* Garantiza que el contenido mínimo sea la altura de la ventana */
+    font-family: Arial, sans-serif;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #426db2;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+/*Logo Home*/
+.logo {
+    width: 30px;  
+    height: auto;  
+}
+
+
+/* ========== MENÚ DE NAVEGACIÓN ========== */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+/* ========== CONTENIDO PRINCIPAL ========== */
+main {
+    flex: 1; /* Permite que main ocupe el espacio disponible entre header y footer */
+    padding: 2px;
+}
+
+/* ========== FOOTER CORREGIDO ========== */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+
+    /* 🔁 CAMBIO: se eliminó position: fixed y bottom: 0
+       para que el footer ya no tape el contenido dinámico */
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+}
+
+/* Estilo de card */
+  .container {
+    width: 200px;
+    text-align: center;
+    margin: 2px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CARRITO DE COMPRAS*/
+    .logoCarrito{
+    width: 30px;  
+    height: auto;  
+}
+
+.botonsito {
+    background-color: black;      
+    color: white;                    
+    border: none;                    
+    padding: 10px 20px;             
+    font-size: 16px;                 
+    border-radius: 8px;            
+    cursor: pointer;                 
+}

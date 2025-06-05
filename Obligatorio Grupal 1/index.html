@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/ctcArenaLogo.png" width="500"></h1>
+    </header>
+
+    <div class="contenedor-flex-header">
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./images/logoHome.jpg" alt="Home" class="logo">
+                    </a>
+                </li>
+
+                <li id="join" onclick="funcionJoin()"><a href="#">Login</a></li>
+
+                <li>
+                    <a href="./carrito.html">
+                        <img src="images/carritoDeCompras.png" alt="Carrito" class="logoCarrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Selector de personas -->
+        <nav>
+            <h4>¿Quién va a comprar?</h4>
+            <ul id="lista-personas">
+                <li>
+                    <label for="Juan">Juan</label>
+                    <input id="Juan" name="persona" type="radio">
+                </li>
+                <li>
+                    <label for="Julian">Julian</label>
+                    <input id="Julian" name="persona" type="radio">
+                </li>
+                <li>
+                    <label for="Carlos">Carlos</label>
+                    <input id="Carlos" name="persona" type="radio">
+                </li>
+            </ul>
+        </nav>
+    <nav>
+<div class="main row justify-content-center"></div>
+    <main>
+        <section>
+            <!-- Cards -->
+            <div class="centrar-card">
+                <div class="container">
+                    <img src="images/conciertoMichaelJackson.jpg" width="100%" height="270px">
+                    <h2>Michael Jackson</h2>
+                    <p>Precio: $1000</p>
+                    <p>Fecha: 13 de Octubre</p>
+                    <button class="botonsito" id="comprarTicket" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoQueen.webp" width="100%" height="270px">
+                    <h2>Queen</h2>
+                    <p>Precio: $1500</p>
+                    <p>Fecha: 26 de septiembre</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/finalChampions.png" width="100%" height="270px">
+                    <h2>Final de la Champions League</h2>
+                    <p>Precio: $2500</p>
+                    <p>Fecha: 15 de Mayo</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/minecraftPelicula.png" width="100%" height="270px">
+                    <h2>Minecraft la Pelicula</h2>
+                    <p>Precio: $200</p>
+                    <p>Fecha: 10 de Marzo</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/finalMundial.png" width="100%" height="270px">
+                    <h2>Final del Mundial</h2>
+                    <p>Precio: $9500</p>
+                    <p>Fecha: 26 de Julio</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoEdSheeran.jpg" width="100%" height="270px">
+                    <h2>Ed Sheeran</h2>
+                    <p>Precio: $1000</p>
+                    <p>Fecha: 10 de Enero</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoSwift.jpg" width="100%" height="270px">
+                    <h2>Taylor Swift</h2>
+                    <p>Precio: $2000</p>
+                    <p>Fecha: 14 de Agosto</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/finalNba.png" width="100%" height="270px">
+                    <h2>Finales de la NBA</h2>
+                    <p>Precio: $3500</p>
+                    <p>Fecha: 20 de abril</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/barbiePelicula.png" width="100%" height="270px">
+                    <h2>Barbie La Pelicula</h2>
+                    <p>Precio: $100</p>
+                    <p>Fecha: 19 de Julio</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/clasicoNacional.png" width="100%" height="270px">
+                    <h2>Clasico Uruguayo</h2>
+                    <p>Precio: $250</p>
+                    <p>Fecha: 18 de septiembre</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoDuki.png" width="100%" height="270px">
+                    <h2>Duki</h2>
+                    <p>Precio: $1200</p>
+                    <p>Fecha: 28 de Marzo</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoLosBeatles.png" width="100%" height="270px">
+                    <h2>Los Beatles</h2>
+                    <p>Precio: $2500</p>
+                    <p>Fecha: 6 de Julio</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                 <div class="container">
+                    <img src="images/losVengadores.png" width="100%" height="270px">
+                    <h2>Los Vengadores Endgame</h2>
+                    <p>Precio: $500</p>
+                    <p>Fecha: 11 de Febrero</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoJustinBieber.png" width="100%" height="270px">
+                    <h2>Justin Bieber</h2>
+                    <p>Precio: $1700</p>
+                    <p>Fecha: 11 de Febrero</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+
+                <div class="container">
+                    <img src="images/conciertoArianaGrande.png" width="100%" height="270px">
+                    <h2>Ariana Grande</h2>
+                    <p>Precio: $1000</p>
+                    <p>Fecha: 19 de Diciembre</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+                
+                <div class="container">
+                    <img src="images/conciertoDaddyYankee.png" width="100%" height="270px">
+                    <h2>Daddy Yankee</h2>
+                    <p>Precio: $1100</p>
+                    <p>Fecha: 18 de Agosto</p>
+                    <button class="botonsito" id="comprarTicket">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CTC Arena</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
